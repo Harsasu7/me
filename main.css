@@ -2548,3 +2548,36 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.skill-item i {
+  font-size: 24px;
+  width: 30px;
+  text-align: center;
+}
+
+.skill-item span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
